@@ -1,3 +1,11 @@
+.Card__tile{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
 .Card{
     padding: 2rem;
     position: relative;

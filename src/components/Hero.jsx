@@ -4,7 +4,7 @@ export default function Hero () {
     return (
         <div className="hero">
             <div className="hero--img">
-                <img src="src/assets/photo-grid.png" alt="" className="hero--img-grid" />
+                <img src="src/assets/img/photo-grid.png" alt="" className="hero--img-grid" />
             </div>
             <div className="hero--text">
                 <h2>

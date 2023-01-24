@@ -2,20 +2,25 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
+import dataSet from "./assets/data";
 
+//console.log( dataSet );
 export default function App () {
+ const CardComponent = dataSet.map( data => {
+   return (<Card 
+        key = {data.id}
+        item = {data}
+       
+    />)
+ })
     return (
         <div className="App">
             <Navbar />
             <Hero />
-            <Card 
-                img = "katy.png"
-                rating = {5.0} 
-                reviewCount = {6}
-                country = "USA"
-                title = "Life Lessons with Katie Zaferes"
-                price = {136}
-            />
+            <div className="Card__tile">
+                {CardComponent}
+            </div>
+            
         </div>
     );
 } 
