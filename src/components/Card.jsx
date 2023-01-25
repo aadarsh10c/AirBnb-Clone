@@ -11,7 +11,7 @@ export default function Card (props) {
     }
     return (
         <div className="Card">
-            <img src={ "src/assets/img/" + data.coverImg } alt="Katy Profile Pic" className="Card--profile" />
+            <img src={ "../assets/img/" + data.coverImg } alt="Katy Profile Pic" className="Card--profile" />
             { badgeText && (<span className="Card--note">
                 {badgeText}
             </span>)}
